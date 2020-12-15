@@ -22,7 +22,6 @@ export const Container = styled.div`
       content: '';
       float: left;
     }
-
     &:hover {
       background-color: ${theme.colors.lightBlue};
     }
