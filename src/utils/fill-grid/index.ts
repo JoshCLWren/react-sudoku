@@ -27,10 +27,11 @@ function fillGrid(grid: GRID) {
       shuffle(numbers);
       for (let value of numbers) {
         // is it not in grid row?
-        // is it not in grid col?
-        // is it not in the grid square
-        // if so
-        grid[row][col] = value;
+        if (grid[row].includes(value))
+          // is it not in grid col?
+          // is it not in the grid square
+          // if so
+          grid[row][col] = value;
         // check grid if its is full if yes stop and return
         // otherwise we run fullgrid()
       }
